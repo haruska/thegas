@@ -1,6 +1,6 @@
 {
   "name": "thegas",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A serverless graphql backend framework",
   "main": "./dist/index.js",
   "repository": {
@@ -18,12 +18,12 @@
   "bugs": "https://github.com/haruska/thegas/issues",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "pub": "yarn build && yarn version && npm publish"
+    "pub": "yarn build && yarn version && npm adduser && npm publish"
   },
   "files": [
-    "./dist/index.js",
-    "./dist/lib/*.js",
-    "./dist/bin/*.js"
+    "dist/index.js",
+    "dist/lib/*.js",
+    "dist/bin/*.js"
   ],
   "bin": {
     "thegas": "bin/thegas-cli.js"
