@@ -1,0 +1,34 @@
+{
+  "name": "thegas",
+  "version": "0.0.1",
+  "description": "A serverless graphql backend framework",
+  "main": "./dist/index.js",
+  "repository": {
+    "url": "https://github.com/haruska/thegas",
+    "type": "git"
+  },
+  "author": "Jason Haruska <jharuska@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "GraphQL",
+    "Serverless",
+    "Lambda"
+  ],
+  "homepage": "https://github.com/haruska/thegas",
+  "bugs": "https://github.com/haruska/thegas/issues",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "bin": {
+    "thegas": "bin/thegas-cli.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
