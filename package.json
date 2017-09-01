@@ -26,13 +26,16 @@
     "dist/bin/*.js"
   ],
   "bin": {
-    "thegas": "bin/thegas-cli.js"
+    "thegas": "dist/bin/cli.js"
   },
   "dependencies": {
     "aws-serverless-express": "^3.0.2",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "minimist": "^1.2.0",
+    "path": "^0.12.7",
+    "shelljs": "^0.7.8"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
