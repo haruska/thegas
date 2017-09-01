@@ -1,4 +1,3 @@
-module.exports = function({name = 'Anonymous'}) {
-  const hello = `Hello, ${name}`;
-  return hello;
-}
+import expressApp from './lib/expressApp';
+
+module.exports = { expressApp };

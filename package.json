@@ -18,7 +18,7 @@
   "bugs": "https://github.com/haruska/thegas/issues",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "pub": "yarn build && yarn version && npm adduser && npm publish"
+    "push": "yarn build && yarn version && npm adduser && npm publish"
   },
   "files": [
     "dist/index.js",
@@ -28,13 +28,26 @@
   "bin": {
     "thegas": "bin/thegas-cli.js"
   },
+  "dependencies": {
+    "aws-serverless-express": "^3.0.2",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
   },
   "babel": {
+    "passPerPreset": true,
     "presets": [
-      "es2015"
+      "es2015",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-regenerator"
     ]
   }
 }
