@@ -27,7 +27,9 @@
     "dist/bin/*.js"
   ],
   "bin": {
-    "thegas": "dist/bin/cli.js"
+    "thegas": "dist/bin/cli.js",
+    "thegas-schema": "dist/bin/schema.js",
+    "thegas-server": "dist/bin/server.js"
   },
   "dependencies": {
     "aws-serverless-express": "^3.0.2",
