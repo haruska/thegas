@@ -15,7 +15,7 @@ const main = () => {
   const command = args._ && args._.length && args._[0]
 
   if (args.version && !command) {
-    console.log(require(path.join(__dirname, '..', 'package.json')).version)
+    console.log(require(path.join(__dirname, '..', '..', 'package.json')).version)
     return
   }
 
