@@ -6,9 +6,9 @@ import commands from '../lib/commands'
 
 const main = () => {
   const args = minimist(process.argv.slice(2), {
-    alias: { h: 'help', v: 'version' },
-    string: ['source', 'name', 'region', 'profile'],
-    boolean: ['quiet'],
+    alias: { h: 'help', v: 'version', p: 'production' },
+    string: ['source'],
+    boolean: ['production'],
     default: { 'source': shell.pwd().toString() }
   })
 
