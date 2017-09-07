@@ -1,3 +1,3 @@
-import expressApp from './lib/expressApp';
+import expressApp from './lib/expressApp'
 
-module.exports = { expressApp };
+module.exports = { expressApp }

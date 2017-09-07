@@ -1,5 +1,5 @@
 import shell from 'shelljs'
 
-export default function(options) {
+export default function() {
   shell.echo("Hello from Thegas!")
 }

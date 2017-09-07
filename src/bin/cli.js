@@ -20,9 +20,9 @@ const main = () => {
   }
 
   if (command && !commands[command]) {
-    console.error(`unsupported command ${command}. re-run with --help for usage information`);
-    process.exit(1);
-    return;
+    console.error(`unsupported command ${command}. re-run with --help for usage information`)
+    process.exit(1)
+    return
   }
 
   // if (args.help) {
@@ -35,13 +35,13 @@ const main = () => {
   // }
 
   if (!command) {
-    console.error('command not provided. re-run with --help for usage information');
-    process.exit(1);
-    return;
+    console.error('command not provided. re-run with --help for usage information')
+    process.exit(1)
+    return
   }
 
   commands[command](args)
-  process.exit();
+  process.exit()
 }
 
-main();
+main()

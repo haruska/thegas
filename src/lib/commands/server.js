@@ -1,6 +1,6 @@
 import shell from 'shelljs'
 
-export default function(options) {
+export default function() {
   shell.echo('Starting Thegas server...')
   shell.exec('thegas-server')
   shell.echo('Done.')
